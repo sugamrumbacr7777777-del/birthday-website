@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+<link href=“https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap” rel=“stylesheet”>
+    <style>
+        body {
+            background-color: #ffe6f0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+        }
+        h1 {
+            color: #d63384;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 15px;
+            margin: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Happy Birthday! 🎉</h1> 
+   <div style="background: rgba(255, 255, 255, 0.9); padding: 30px; border-radius: 20px; max-width: 650px; margin: 30px auto; text-align: left; font-family: Arial, sans-serif; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+    <p style="color: #333; line-height: 1.8; font-size: 16px;">
+        Dear Baby,<br><br>
+        I know lately you’ve been going through a lot. I know you feel overwhelmed, and I know sometimes you just want to hide away from the world. I want you to know that you don’t have to hide from me. I see you. I see the weight you carry, and I still choose you every single day.<br><br>
+        I made this little space for you because I wanted to give you something tangible to hold onto when things feel heavy. These aren’t just words on a screen; they are pieces of my heart that belong to you. You don’t have to be perfect around me. You can be messy, you can be quiet, you can be sad, and I’ll still be here.<br><br>
+        You are my peace, my favorite person, and my home. Happy Birthday, my love.<br><br>
+        Forever yours,<br>
+        Yours love
+    </p>
+</div>                                                                                                      
+    <p>This little website is made just for you.</p>
+
+    <div class="gallery">
+        <img src="IMAGES/SOHU1.jpg" alt="Photo">
+        <img src="IMAGES/SOHU2.jpg" alt="Photo">
+        <img src="IMAGES/SOHU3.jpg" alt="Photo">
+        <img src="IMAGES/SOHU4.jpg" alt="Photo">
+        <img src="IMAGES/SOHU5.jpg" alt="Photo">
+    </div>
+<audio id=“myAudio” controls loop>
+    <source src=“song.mp3” type=“audio/mpeg”>
+</audio>
+<div style=“text-align: center; margin: 30px 0; font-size: 18px; color: #555;”>
+    <p>Together for:</p>
+    <h3 id=“timer” style=“color: #d63384;”>Calculando...</h3>
+</div>
+<div style="text-align: center; margin: 40px auto; max-width: 600px; padding: 20px; background: rgba(255, 255, 255, 0.9); border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+    <h3 style="color: #d63384; margin-bottom: 15px;">Why I Love You</h3>
+    <p id="reason-text" style="font-size: 18px; color: #444; min-height: 60px; display: flex; align-items: center; justify-content: center; padding: 0 10px;">Click the button below to see all the reasons...</p>
+    <button onclick="showNextReason()" style="background-color: #d63384; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 25px; cursor: pointer; transition: 0.2s;">Click for Another Reason 💖</button>
+    <p id="reason-count" style="font-size: 12px; color: #888; margin-top: 10px;"></p>
+</div>
+
+<script>
+    const reasons = [
+        "Even though we are miles apart, you always make me feel so close to you.",
+        "You are my favorite notification of the day.",
+        "The way you laugh makes my entire day better.",
+        "You support me through everything, even from a distance.",
+        "Talking to you makes hours feel like minutes.",
+        "You are the strongest, most amazing person I know.",
+        "Even when we're thousands of miles apart, you're the first thing I think about.",
+        "Your voice is my favorite sound in the world.",
+        "You make long distance feel completely worth it.",
+        "I love how comfortable we are with each other.",
+        "The way you laugh at your own jokes.",
+        "How strong you are, even when you don't feel like it.",
+        "The way you care for your family and friends.",
+        "Your smile, even when you think it's messy.",
+        "How you make ordinary moments feel special.",
+        "Your determination and how you never give up.",
+        "The way you talk about your dreams (like your coffee shop).",
+        "Your honesty, even when it's hard.",
+        "How safe I feel when I talk to you.",
+        "The way you look when you just woke up.",
+        "How you make me want to be a better man.",
+        "Your random bursts of energy.",
+        "The way you overthink things (it means you care deeply).",
+        "The way you say my name.",
+        "Just... you. Every single part of you."
+    ];
+
+    let count = 0;
+    function showNextReason() {
+        const randomIndex = Math.floor(Math.random() * reasons.length);
+        document.getElementById("reason-text").innerText = reasons[randomIndex];
+        count++;
+        document.getElementById("reason-count").innerText = `Reason #${count} (Keep clicking for more!)`;
+    }
+</script>
+<div id="mail-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #fbcfe8, #f472b6); display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 9999; transition: opacity 0.5s ease;">
+    <div style="background: white; padding: 40px; border-radius: 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.15); max-width: 400px; width: 90%;">
+        <div style="font-size: 60px; margin-bottom: 20px;">💌</div>
+        <h2 style="color: #db2777; margin-bottom: 10px;">You've got mail... 💌</h2>
+        <p style="color: #666; font-size: 15px; margin-bottom: 25px;">I couldn't wrap this in a box, so I wrapped it in words instead. Open when you're ready.</p>
+        <button onclick="openMail()" style="background-color: #db2777; color: white; border: none; padding: 12px 30px; font-size: 16px; border-radius: 30px; cursor: pointer; font-weight: bold; box-shadow: 0 4px 10px rgba(219,39,119,0.3);">Open Letter 💌</button>
+    </div>
+</div>
+<div style=“max-width: 600px; margin: 40px auto; background: rgba(255, 255, 255, 0.95); padding: 30px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: Arial, sans-serif; text-align: left;”>
+    <div style=“border-bottom: 2px solid #fbcfe8; padding-bottom: 15px; margin-bottom: 20px;”>
+        <p style=“margin: 5px 0; color: #888; font-size: 14px;”><strong>From:</strong> Me</p>
+        <p style=“margin: 5px 0; color: #db2777; font-size: 14px;”><strong>To:</strong> My Favorite Person</p>
+    </div>
+    <p style=“color: #444; font-size: 16px; line-height: 1.6; margin: 0;”>
+        “I know I don’t always have the right words to say, and I know I can be a lot sometimes. But I want you to know that I am so proud of you. I’m proud of how you handle your struggles, I’m proud of your strength, and I’m proud to call you mine. I love you more than I can explain.”
+    </p>
+</div>
+<script>
+    function openMail() {
+        const overlay = document.getElementById("mail-overlay");
+        overlay.style.opacity = "0";
+        setTimeout(() => {
+            overlay.style.display = "none";
+        }, 500);
+        
+        // Auto-play audio when she opens the letter!
+        const audio = document.getElementById("myAudio");
+        if (audio) {
+            audio.play().catch(e => console.log("Audio play blocked"));
+        }
+    }
+</script>
+<div style=“max-width: 600px; margin: 40px auto; background: rgba(255, 255, 255, 0.95); padding: 30px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: Arial, sans-serif; text-align: left;”>
+    <h3 style=“color: #db2777; margin-top: 0; margin-bottom: 15px; font-size: 18px;”>Dear Baby,</h3>
+    <p style=“color: #444; font-size: 16px; line-height: 1.6; margin: 0 0 15px 0;”>
+        You are the strongest person I know. Even on days when you feel like you’re falling apart, you’re still standing. I see the way you care for everyone else, and I want to be the one who takes care of you for a change. I believe in you, I believe in your dreams, and I believe in us.
+    </p>
+    <p style=“color: #db2777; font-weight: bold; margin: 0; font-size: 16px;”>
+        Happy Birthday, my love
+    </p>
+</div>
+<div style="max-width: 600px; margin: 40px auto; background: rgba(255, 255, 255, 0.95); padding: 25px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: Arial, sans-serif; text-align: center;">
+    <h3 style="color: #db2777; margin-top: 0; margin-bottom: 15px; font-size: 18px;">Little Message For You</h3>
+    
+    <!-- Photo Frame inside the message card -->
+    <div style="width: 100%; height: 220px; background: #f3f4f6; border-radius: 12px; overflow: hidden; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">
+        <img src="memory.jpg" alt="Memory" style="width: 100%; height: 100%; object-fit:contain;" cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span style="display:none; color: #888; font-size: 14px;">(Put your photo filename as your-memory-photo.jpg)</span>
+    </div>
+
+    <p style="color: #444; font-size: 16px; line-height: 1.6; margin: 0;">
+        "Remember that day we were just talking about nothing? That was the day I realized I wanted to talk to you about everything. You make the boring days feel like an adventure. Thank you for being you."
+    </p>
+<!-- Reasons Why You Matter Section -->
+<div style="max-width: 700px; margin: 50px auto; background: #fff; padding: 40px; border-radius: 25px; border: 1px solid #ddd; box-shadow: 0 6px 20px rgba(0,0,0,0.08); font-family: Arial, sans-serif; text-align: center; background-image: url('https://www.transparenttextures.com/patterns/brushed-alum.png');">
+    <h2 style="color: #444; font-size: 32px; font-weight: 600; text-transform: uppercase; margin: 0 0 30px 0;">Reasons Why You Matter</h2>
+   
+       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; justify-items: center;">
+        <!-- Reason 1 -->
+        <div style="background: #fdfdfd; border: 1px solid #e0e0e0; padding: 15px 25px; border-radius: 50px; color: #333; font-size: 15px; font-weight: 700; width: 80%; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+            You matter because you make me feel seen.
+        </div>
+        <!-- Reason 2 -->
+        <div style="background: #fdfdfd; border: 1px solid #e0e0e0; padding: 15px 25px; border-radius: 50px; color: #333; font-size: 15px; font-weight: 700; width: 80%; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+            You matter because you never give up.
+        </div>
+        <!-- Reason 3 -->
+        <div style="background: #fdfdfd; border: 1px solid #e0e0e0; padding: 15px 25px; border-radius: 50px; color: #333; font-size: 15px; font-weight: 700; width: 80%; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+            You matter because you have the biggest heart.
+        </div>
+        <!-- Reason 4 -->
+        <div style="background: #fdfdfd; border: 1px solid #e0e0e0; padding: 15px 25px; border-radius: 50px; color: #333; font-size: 15px; font-weight: 700; width: 80%; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+            You matter because you're my safe place.
+        </div>
+        <!-- Reason 5 -->
+        <div style="background: #fdfdfd; border: 1px solid #e0e0e0; padding: 15px 25px; border-radius: 50px; color: #333; font-size: 15px; font-weight: 700; width: 80%; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+            You matter because you are you.
+        </div>
+        <!-- Reason 6 -->
+        <div style="background: #fdfdfd; border: 1px solid #e0e0e0; padding: 15px 25px; border-radius: 50px; color: #333; font-size: 15px; font-weight: 700; width: 80%; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+            You matter because you light up my life.
+        </div>
+        <!-- Reason 7 -->
+        <div style="background: #fdfdfd; border: 1px solid #e0e0e0; padding: 15px 25px; border-radius: 50px; color: #333; font-size: 15px; font-weight: 700; width: 80%; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+            You matter because your strength inspires me.
+        </div>
+        <!-- Reason 8 -->
+        <div style="background: #fdfdfd; border: 1px solid #e0e0e0; padding: 15px 25px; border-radius: 50px; color: #333; font-size: 15px; font-weight: 700; width: 80%; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+            You matter because I'm a better person with you.
+        </div>
+    </div>
+</div>
+</div>
+<div class="songs-section">
+    <h3>Songs I Dedicate To You</h3>
+    
+    <div class="song-card">
+        <p class="song-title"><strong>1. "Perfect" by Ed Sheeran</strong></p>
+        <p class="song-reason">"Because this is exactly how I see you. Perfect in your own way."</p>
+        <audio controls>
+            <source src="your-song-1-file.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+<audio controls>
+    <source src=“Ed Sheeran - Perfect (Official Music Video)...mp3” type=“audio/mpeg”>
+    Your browser does not support the audio element.
+</audio>
+    <div class="song-card">
+        <p class="song-title"><strong>2. "Until I Found You" by Stephen Sanchez</strong></p>
+        <p class="song-reason">"Because I felt like I was waiting for you before we even met."</p>
+        <audio controls>
+            <source src="your-song-2-file.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="song-card">
+        <p class="song-title"><strong>3. [Insert Your Third Song Here]</strong></p>
+        <p class="song-reason">"[Insert your reason or meaning here.]"</p>
+        <audio controls>
+            <source src="your-song-3-file.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+</body>
+</body>
+</html>
